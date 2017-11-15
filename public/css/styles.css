@@ -1,0 +1,41 @@
+.todo-list {
+  margin-top: 75px;
+}
+body{
+  background-color: #FFEC8B;
+}
+.list-group-item {
+  height: 50px;
+  line-height: 2;
+}
+
+img{
+  max-width:40%;
+  margin: 6px;
+}
+input.new-item {
+  width: 75%;
+  height: 35px;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.list-group-item.new-item {
+  height: 100px;
+}
+
+input.new-item:focus {
+  outline: none;
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.complete {
+  float: right;
+  height: 25px;
+  margin-top: 3px;
+  line-height: 0.5;
+}
+
+.edit {
+  width: 100%;
+}

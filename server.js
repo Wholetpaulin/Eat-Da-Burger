@@ -7,6 +7,24 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
+var connection ;
+//CONNECTION TO DATABASE
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else {
+  connection = mysql.createConnection({
+    host:"localhost",
+    port:3307,
+    user:"root",
+    password:"",
+    database:"d7cxs87za6ci74os"
+  });
+}
+connection.connect();
+module.exports = connection;
+
+
 // Sets up the Express App
 // =============================================================
 var app = express();
